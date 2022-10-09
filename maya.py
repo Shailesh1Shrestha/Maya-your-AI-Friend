@@ -61,13 +61,13 @@ if __name__ == "__main__":
 
         if 'wikipedia' in query:
             print("Searching Wikipedia...")
-            # speak("Searching Wikipedia...")
+            speak("Searching Wikipedia...")
             query = query.replace("wikipedia", "")
             result = wikipedia.summary(query, 2)
             print("According to wikipedia")
-            # speak("According to wikipedia")
+            speak("According to wikipedia")
             print(result)
-            # speak(result)
+            speak(result)
 
         elif 'open youtube' in query:
             webbrowser.open("youtube.com")
@@ -87,4 +87,4 @@ if __name__ == "__main__":
         elif 'time' in query:
             srtTime = datetime.datetime.now().strftime("%H:%M:%S")
             print(f"The time is {srtTime}")
-            # speak(f"The time is {srtTime}")
+            speak(f"The time is {srtTime}")
